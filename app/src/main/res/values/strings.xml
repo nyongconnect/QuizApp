@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Quiz App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_dummy_category">English</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="answer_state">answer state</string>
+    <string name="text_difficulty_easy">Easy</string>
+    <string name="text_difficulty_medium">Medium</string>
+    <string name="text_difficulty_hard">Hard</string>
+    <string name="text_difficulty_level">Difficulty Level</string>
 </resources>

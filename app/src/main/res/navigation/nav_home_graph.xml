@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_graph"
+    app:startDestination="@id/quizCategoryFragment">
+
+    <fragment
+        android:id="@+id/quizCategoryFragment"
+        android:name="com.example.quizapp.ui.quiz.QuizCategoryFragment"
+        android:label="Category"
+        tools:layout="@layout/fragment_quiz_category" >
+        <action
+            android:id="@+id/action_quizCategoryFragment_to_difficultyLevelFragment"
+            app:destination="@id/difficultyLevelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.quizapp.ui.quiz.QuizFragment"
+        android:label="Question"
+        tools:layout="@layout/fragment_quiz" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.quizapp.ui.profile.ProfileFragment"
+        android:label="Profile" />
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.example.quizapp.ui.score.ScoreFragment"
+        android:label="Scores"
+        tools:layout="@layout/fragment_score" />
+    <fragment
+        android:id="@+id/difficultyLevelFragment"
+        android:name="com.example.quizapp.ui.difficulty.DifficultyLevelFragment"
+        android:label="Level"
+        tools:layout="@layout/fragment_difficulty_level" >
+        <action
+            android:id="@+id/action_difficultyLevelFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+</navigation>
